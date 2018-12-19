@@ -16,9 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sec05_01();
+        //sec05_01();
 
-        sec05_02();
+        //sec05_02();
+
+        //Log.d("LOG", "壁掛け" + "時計");
+
+        sec05_03();
     }
 
     private void sec05_01(){
@@ -45,5 +49,11 @@ public class MainActivity extends AppCompatActivity {
         Log.d("LOG", "x*=3は" + x + "です。");
         x /= 3;
         Log.d("LOG", "x/=3は" + x + "です。");
+    }
+
+    private void sec05_03(){
+        Log.d("LOG", "200" + 99);
+        Log.d("LOG", "$" + 9 + 9);
+        Log.d("LOG", "$" + (9 + 9));
     }
 }
