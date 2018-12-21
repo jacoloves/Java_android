@@ -76,11 +76,26 @@ public class MainActivity extends AppCompatActivity {
 //            sum = sum + janken[i];
 //        }
 
+//        //コレクションのfor文
+//
+//        for (int i = 0; i < 3; i++) {
+//            sum = sum + jankenArr.get(i);
+//        }
+
+        
+
         // for eachの例
 //        for (int num:
 //             janken) {
 //            sum = sum + num;
 //        }
+        
+        //コレクションのforeach
+
+        for (Integer num :
+             jankenArr) {
+            sum = sum + num;
+        }
 
         TextView goukei = (TextView) findViewById(R.id.goukei);
         goukei.setText("合計" + sum);
